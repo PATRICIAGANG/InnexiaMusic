@@ -597,6 +597,7 @@ async def play(_, message: Message):
           await lel.edit("Give me something to play")
         # Looks like hell. Aren't it?? FUCK OFF
         try:
+            IMG_OP=https://telegra.ph/file/925102ade0ded9b372bd4.jpg
             toxxt = "**Select the song you want to play**\n\n"
             j = 0
             useer=user_name
@@ -623,7 +624,7 @@ async def play(_, message: Message):
                     [InlineKeyboardButton(text="Close 🛑", callback_data="cls")],
                 ]
             )       
-            await lel.edit(toxxt,reply_markup=koyboard,disable_web_page_preview=True)
+            await lel.edit(IMG_OP,toxxt,reply_markup=koyboard,disable_web_page_preview=True)
             # WHY PEOPLE ALWAYS LOVE PORN ?? (A point to think)
             return
             # Returning to pornhub
