@@ -598,7 +598,7 @@ async def play(_, message: Message):
         # Looks like hell. Aren't it?? FUCK OFF
         try:
             
-            toxxt = "**Select the song you want to [play](https://telegra.ph/file/925102ade0ded9b372bd4.jpg)**\n\n"
+            toxxt = "**Select the song you want to Play**\n\n"
             j = 0
             useer=user_name
             emojilist = ["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣",]
@@ -678,7 +678,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption=f"#⃣ Your requested song **queued** at position {position}!",
+            caption=f"#⃣ Your requested song **{title}**\n **queued** at position {position}!",
             reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -700,7 +700,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="▶️ **Playing** here the song requested by {} via Youtube Music 😜".format(
+            caption="▶️ **Playing** here the song requested by {}".format(
                 message.from_user.mention()
             ),
         )
@@ -1149,7 +1149,7 @@ async def lol_cb(b, cb):
     if cb.from_user.id != useer_id:
         await cb.answer("You ain't the person who requested to play the song!", show_alert=True)
         return
-    await cb.message.edit("Hang On... Player Starting")
+    await cb.message.edit("🎥 Creating Thumbnail From BotXD logs")
     x=int(x)
     try:
         useer_name = cb.message.reply_to_message.from_user.first_name
@@ -1206,7 +1206,7 @@ async def lol_cb(b, cb):
         await cb.message.delete()
         await b.send_photo(chat_id,
             photo="final.png",
-            caption=f"#⃣  Song requested by {r_by.mention} **queued** at position {position}!",
+            caption=f"#⃣  Song **{title}**\n requested by {r_by.mention} **queued** at position {position}!",
             reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -1228,7 +1228,7 @@ async def lol_cb(b, cb):
         await b.send_photo(chat_id,
             photo="final.png",
             reply_markup=keyboard,
-            caption=f"▶️ **Playing** here the song requested by {r_by.mention} \n** Duration {duration} \n ",
+            caption=f"▶️ **Playing** here the song **{tite}**\n requested by {r_by.mention} \n** Duration {duration} \n ",
         )
         
         os.remove("final.png")
