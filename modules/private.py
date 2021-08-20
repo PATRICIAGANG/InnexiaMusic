@@ -32,18 +32,4 @@ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Aɴᴅ Pʟᴀʏ Mᴜsɪᴄ Fʀᴇᴇʟ�
 ❍ /admincache - Refresh admin list
 """
         ),
-     disable_web_page_preview=True
-    )
-
-@Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
-async def gstart(_, message: Message):
-      await message.reply_text("""**Aᴍ Oɴʟɪɴᴇ ✅**""",
-      reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "Updates", url="https://t.me/TGbotzXD")
-                ]
-            ]
-        )
-   )
+     
