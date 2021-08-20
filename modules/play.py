@@ -91,7 +91,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
                 f = await aiofiles.open("background.png", mode="wb")
                 await f.write(await resp.read())
                 await f.close()
-    IMG_OP="https://telegra.ph/file/925102ade0ded9b372bd4.jpg"
+   
     image1 = Image.open("./background.png")
     image2 = Image.open("./etc/foreground.png")
     image3 = changeImageSize(1280, 720, image1)
@@ -598,7 +598,7 @@ async def play(_, message: Message):
         # Looks like hell. Aren't it?? FUCK OFF
         try:
             
-            toxxt = "**Select the song you want to play**,IMG_OP\n\n"
+            toxxt = "**Select the song you want to [play](https://telegra.ph/file/925102ade0ded9b372bd4.jpg)**\n\n"
             j = 0
             useer=user_name
             emojilist = ["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣",]
