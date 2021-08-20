@@ -598,7 +598,7 @@ async def play(_, message: Message):
         # Looks like hell. Aren't it?? FUCK OFF
         try:
             
-            toxxt = "IMG_OP,**Select the song you want to play**\n\n"
+            toxxt = "**Select the song you want to play**,IMG_OP\n\n"
             j = 0
             useer=user_name
             emojilist = ["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣",]
