@@ -592,13 +592,13 @@ async def play(_, message: Message):
         ydl_opts = {"format": "bestaudio[ext=m4a]"}
         
         try:
-          IMG_OP,results = YoutubeSearch(query, max_results=5).to_dict()
+          results = YoutubeSearch(query, max_results=5).to_dict()
         except:
           await lel.edit("Give me something to play")
         # Looks like hell. Aren't it?? FUCK OFF
         try:
             
-            toxxt = "**Select the song you want to play**\n\n"
+            toxxt = "IMG_OP,**Select the song you want to play**\n\n"
             j = 0
             useer=user_name
             emojilist = ["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣",]
