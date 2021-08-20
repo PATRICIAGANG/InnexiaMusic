@@ -91,7 +91,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
                 f = await aiofiles.open("background.png", mode="wb")
                 await f.write(await resp.read())
                 await f.close()
-
+    IMG_OP="https://telegra.ph/file/925102ade0ded9b372bd4.jpg"
     image1 = Image.open("./background.png")
     image2 = Image.open("./etc/foreground.png")
     image3 = changeImageSize(1280, 720, image1)
@@ -592,8 +592,7 @@ async def play(_, message: Message):
         ydl_opts = {"format": "bestaudio[ext=m4a]"}
         
         try:
-          IMG_OP="https://telegra.ph/file/925102ade0ded9b372bd4.jpg",
-          results = YoutubeSearch(query, max_results=5).to_dict()
+          IMG_OP,results = YoutubeSearch(query, max_results=5).to_dict()
         except:
           await lel.edit("Give me something to play")
         # Looks like hell. Aren't it?? FUCK OFF
