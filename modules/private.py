@@ -2,6 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 from config import BOT_NAME as bn
+from config import ALIVE_IMG as IMG_OP
 from helpers.filters import other_filters2
 
 
@@ -34,12 +35,12 @@ I Cᴀɴ Pʟᴀʏ Mᴜsɪᴄ Iɴ Yᴏᴜʀ  Gʀᴏᴜᴩ VC\n. Dᴇᴠᴇʟᴏ�
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**Aᴍ Oɴʟɪɴᴇ ✅**""",
+      await message.reply_text("""**IMG_OP,Aᴍ Aᴄᴛɪᴠᴇ🚨**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔊Uᴩᴅᴀᴛᴇs", url="https://t.me/patricia_updates")
+                        "Sᴜᴩᴩᴏʀᴛ⚠️", url="https://t.me/TGBotXD")
                 ]
             ]
         )
