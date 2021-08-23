@@ -36,7 +36,7 @@ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Aɴᴅ Pʟᴀʏ Mᴜsɪᴄ Fʀᴇᴇʟ�
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**IMG_OP,Aᴍ Oɴʟɪɴᴇ ✅**""",
+      await message.reply_text("""{IMG_OP},**Aᴍ Oɴʟɪɴᴇ ✅**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
