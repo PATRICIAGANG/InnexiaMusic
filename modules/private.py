@@ -2,15 +2,14 @@ from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 from config import BOT_NAME as bn
-from config import ALIVE_PIC as IMG_OP
 from helpers.filters import other_filters2
 
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
     await message.reply_text(
-        f"""**Hello 👋 [{}](tg://user?id={})!,
-I Cᴀɴ Pʟᴀʏ Mᴜsɪᴄ Iɴ Yᴏᴜʀ Sᴇxʏ Gʀᴏᴜᴩ Vᴏɪᴄᴇ Cʜᴀᴛ. Dᴇᴠᴇʟᴏᴩᴇᴅ Bʏ [ӾĐƇƠƁƦƛ](https://t.me/UseIes).
+        f"""**Hey, I'm {bn} 🔥⚡
+I Cᴀɴ Pʟᴀʏ Mᴜsɪᴄ Iɴ Yᴏᴜʀ Sᴇxʏ Gʀᴏᴜᴩ Vᴏɪᴄᴇ Cʜᴀᴛ. Dᴇᴠᴇʟᴏᴩᴇᴅ Bʏ [TGBotXD](https://t.me/TGbotXD).
 Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Aɴᴅ Pʟᴀʏ Mᴜsɪᴄ Fʀᴇᴇʟʏ!**
         """,
         reply_markup=InlineKeyboardMarkup(
@@ -36,12 +35,12 @@ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Aɴᴅ Pʟᴀʏ Mᴜsɪᴄ Fʀᴇᴇʟ�
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**IMG_OP,Aᴍ Aᴄᴛɪᴠᴇ🚨**""",
+      await message.reply_text("""**Aᴍ Oɴʟɪɴᴇ ✅**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Sᴜᴩᴩᴏʀᴛ⚠️", url="https://t.me/TGBotXD")
+                        "🥀Uᴩᴅᴀᴛᴇs", url="https://t.me/SiderzChat")
                 ]
             ]
         )
