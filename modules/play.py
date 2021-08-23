@@ -91,7 +91,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
                 f = await aiofiles.open("background.png", mode="wb")
                 await f.write(await resp.read())
                 await f.close()
-   
+
     image1 = Image.open("./background.png")
     image2 = Image.open("./etc/foreground.png")
     image3 = changeImageSize(1280, 720, image1)
@@ -597,8 +597,7 @@ async def play(_, message: Message):
           await lel.edit("Give me something to play")
         # Looks like hell. Aren't it?? FUCK OFF
         try:
-            
-            toxxt = "**Select the song you want to Play**\n\n"
+            toxxt = "**Select the song you want to play**\n\n"
             j = 0
             useer=user_name
             emojilist = ["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣",]
@@ -624,7 +623,7 @@ async def play(_, message: Message):
                     [InlineKeyboardButton(text="Close 🛑", callback_data="cls")],
                 ]
             )       
-            await lel.edit(IMG_OP,toxxt,reply_markup=koyboard,disable_web_page_preview=True)
+            await lel.edit(toxxt,reply_markup=koyboard,disable_web_page_preview=True)
             # WHY PEOPLE ALWAYS LOVE PORN ?? (A point to think)
             return
             # Returning to pornhub
@@ -678,7 +677,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption=f"#⃣ Your requested song **{title}**\n **queued** at position {position}!",
+            caption=f"#⃣ Your requested song **queued** at position {position}!",
             reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -700,7 +699,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="▶️ **Playing** here the song requested by {}".format(
+            caption="▶️ **Playing** here the song requested by {} via Youtube Music 😜".format(
                 message.from_user.mention()
             ),
         )
@@ -844,7 +843,7 @@ async def ytplay(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="▶️ **Playing** here the song requested by {} via Youtube Music 😜".format(
+            caption="▶️ **song by {r_by.mention}\n**🏷️Title{title}**\n**⏳Duration {duration}**\n**👁️Views{views}**\n".format(
                 message.from_user.mention()
             ),
         )
@@ -1149,7 +1148,7 @@ async def lol_cb(b, cb):
     if cb.from_user.id != useer_id:
         await cb.answer("You ain't the person who requested to play the song!", show_alert=True)
         return
-    await cb.message.edit("🎥 Creating Thumbnail From BotXD logs")
+    await cb.message.edit("Hang On... Player Starting")
     x=int(x)
     try:
         useer_name = cb.message.reply_to_message.from_user.first_name
@@ -1206,7 +1205,7 @@ async def lol_cb(b, cb):
         await cb.message.delete()
         await b.send_photo(chat_id,
             photo="final.png",
-            caption=f"#⃣  Song **{title}**\n requested by {r_by.mention} **queued** at position {position}!",
+            caption=f""▶️ **song by** {r_by.mention}\n\n**🏷️Title** {title} \n\n**⏳Duration** {duration}\n\n**👁️Views** {views}\n\n**Position at** {position}\n\n",
             reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -1228,8 +1227,8 @@ async def lol_cb(b, cb):
         await b.send_photo(chat_id,
             photo="final.png",
             reply_markup=keyboard,
-            caption=f"▶️ **Playing** here the song **{tite}**\n requested by {r_by.mention} \n** Duration {duration} \n ",
-        )
+            caption=f"▶️ **song by** {r_by.mention}\n\n**🏷️Title** {title} \n\n**⏳Duration** {duration}\n\n**👁️Views** {views}\n\n",
+          )
         
         os.remove("final.png")
 
