@@ -2,15 +2,15 @@ from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 from config import BOT_NAME as bn
-from config import ALIVE_IMG as IMG_OP
+from config import ALIVE_PIC as IMG_OP
 from helpers.filters import other_filters2
 
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
     await message.reply_text(
-       f"""**Hello 👋 [{}](tg://user?id={})!,
-I Cᴀɴ Pʟᴀʏ Mᴜsɪᴄ Iɴ Yᴏᴜʀ  Gʀᴏᴜᴩ VC\n. Dᴇᴠᴇʟᴏᴩᴇᴅ Bʏ [TGBᴏᴛXD](https://t.me/TGBOTZXD)\n
+        f"""**Hello 👋 [{}](tg://user?id={})!,
+I Cᴀɴ Pʟᴀʏ Mᴜsɪᴄ Iɴ Yᴏᴜʀ Sᴇxʏ Gʀᴏᴜᴩ Vᴏɪᴄᴇ Cʜᴀᴛ. Dᴇᴠᴇʟᴏᴩᴇᴅ Bʏ [ӾĐƇƠƁƦƛ](https://t.me/UseIes).
 Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Aɴᴅ Pʟᴀʏ Mᴜsɪᴄ Fʀᴇᴇʟʏ!**
         """,
         reply_markup=InlineKeyboardMarkup(
