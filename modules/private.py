@@ -10,7 +10,9 @@ from helpers.filters import other_filters2
 async def start(_, message: Message):
     await message.reply_text(
    f"""**Hello 👋 [{}](tg://user?id={})!,
-I Cᴀɴ Pʟᴀʏ Mᴜsɪᴄ Iɴ Yᴏᴜʀ  Gʀᴏᴜᴩ VC\n. Dᴇᴠᴇʟᴏᴩᴇᴅ Bʏ [TGBᴏᴛXD](https://t.me/TGBOTZXD)\nAᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Aɴᴅ Pʟᴀʏ Mᴜsɪᴄ Fʀᴇᴇʟʏ!**""",
+I Cᴀɴ Pʟᴀʏ Mᴜsɪᴄ Iɴ Yᴏᴜʀ  Gʀᴏᴜᴩ VC\n. Dᴇᴠᴇʟᴏᴩᴇᴅ Bʏ [TGBᴏᴛXD](https://t.me/TGBOTZXD)\n
+Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Aɴᴅ Pʟᴀʏ Mᴜsɪᴄ Fʀᴇᴇʟʏ!**
+    """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
