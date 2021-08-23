@@ -36,12 +36,14 @@ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Aɴᴅ Pʟᴀʏ Mᴜsɪᴄ Fʀᴇᴇʟ�
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""{IMG_OP},**Aᴍ Oɴʟɪɴᴇ ✅**""",
+      await message.reply_text("""**Aᴍ ACTIVE ALWAYS**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🥀Uᴩᴅᴀᴛᴇs", url="https://t.me/TGBOTZXD")
+                        "🥀Uᴩᴅᴀᴛᴇs", url="https://t.me/TGBOTZXD"),
+                    InlineKeyboardButton(
+                        "Cᴏᴍᴍᴀɴᴅs🚨", url="https://t.me/TGBotzXD/7")
                 ]
             ]
         )
