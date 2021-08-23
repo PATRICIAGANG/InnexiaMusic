@@ -15,6 +15,7 @@ UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "SiderzBot")
 BG_IMAGE = getenv("BG_IMAGE", "https://telegra.ph/file/b0df8b1fe4839c0ea395e.jpg")
 admins = {}
 API_ID = int(getenv("API_ID"))
+ALIVE_IMG = getenv("ALIVE_IMG")
 API_HASH = getenv("API_HASH")
 BOT_USERNAME = getenv("BOT_USERNAME")
 ASSISTANT_NAME = getenv("ASSISTANT_NAME", "innexia Assistant")
