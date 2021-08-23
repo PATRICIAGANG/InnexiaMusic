@@ -4,6 +4,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from config import BOT_NAME as bn
 from helpers.filters import other_filters2
 
+IMG_OP="https://telegra.ph/file/925102ade0ded9b372bd4.jpg"
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
@@ -16,7 +17,7 @@ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Aɴᴅ Pʟᴀʏ Mᴜsɪᴄ Fʀᴇᴇʟ�
             [
                 [
                     InlineKeyboardButton(
-                        "Cᴏᴍᴍᴀɴᴅs🎒", url="t.me/piroXpower")
+                        "Cᴏᴍᴍᴀɴᴅs🎒", url="https://t.me/TGBotzXD/7")
                   ],[
                     InlineKeyboardButton(
                         "Sᴜᴩᴩᴏʀᴛ⚠️", url="https://t.me/TGBotXD"
@@ -35,12 +36,12 @@ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Aɴᴅ Pʟᴀʏ Mᴜsɪᴄ Fʀᴇᴇʟ�
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**Aᴍ Oɴʟɪɴᴇ ✅**""",
+      await message.reply_text("""**IMG_OP,Aᴍ Oɴʟɪɴᴇ ✅**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🥀Uᴩᴅᴀᴛᴇs", url="https://t.me/SiderzChat")
+                        "🥀Uᴩᴅᴀᴛᴇs", url="https://t.me/TGBOTZXD")
                 ]
             ]
         )
