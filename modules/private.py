@@ -10,7 +10,7 @@ IMG_OP="https://telegra.ph/file/925102ade0ded9b372bd4.jpg"
 async def start(_, message: Message):
     await message.reply_text(
         f"""**Hey, I'm {bn} 🔥⚡
-I Cᴀɴ Pʟᴀʏ Mᴜsɪᴄ Iɴ Yᴏᴜʀ Sᴇxʏ Gʀᴏᴜᴩ Vᴏɪᴄᴇ Cʜᴀᴛ. Dᴇᴠᴇʟᴏᴩᴇᴅ Bʏ [TGBotXD](https://t.me/TGbotXD).
+I Cᴀɴ Pʟᴀʏ Mᴜsɪᴄ Iɴ Yᴏᴜʀ Sᴇxʏ Gʀᴏᴜᴩ Vᴏɪᴄᴇ Cʜᴀᴛ. Dᴇᴠᴇʟᴏᴩᴇᴅ Bʏ [TGBotXD](https://t.me/TGbotsXD).
 Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Aɴᴅ Pʟᴀʏ Mᴜsɪᴄ Fʀᴇᴇʟʏ!**
         """,
         reply_markup=InlineKeyboardMarkup(
@@ -20,7 +20,7 @@ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Aɴᴅ Pʟᴀʏ Mᴜsɪᴄ Fʀᴇᴇʟ�
                         "Cᴏᴍᴍᴀɴᴅs🎒", url="https://t.me/TGBotzXD/7")
                   ],[
                     InlineKeyboardButton(
-                        "Sᴜᴩᴩᴏʀᴛ⚠️", url="https://t.me/TGBotXD"
+                        "Sᴜᴩᴩᴏʀᴛ⚠️", url="https://t.me/TGBotsXD"
                     ),
                     InlineKeyboardButton(
                         "Cʜᴀɴɴᴇʟ📲", url="https://t.me/TGBotzXD"
